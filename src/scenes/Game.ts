@@ -15,7 +15,7 @@ export default class Demo extends Phaser.Scene {
     this.tweens.add({
       targets: logo,
       y: 350,
-      duration: 1500,
+      duration: 150,
       ease: 'Sine.inOut',
       yoyo: true,
       repeat: -1
