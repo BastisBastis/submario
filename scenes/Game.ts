@@ -10,6 +10,7 @@ export default class Demo extends Phaser.Scene {
   }
 
   create() {
+    console.log("Japjamensan");
     const logo = this.add.image(400, 70, 'logo');
 
     this.tweens.add({
