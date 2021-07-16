@@ -45,7 +45,8 @@ export default class Demo extends Phaser.Scene {
         {key:"player", frame:"run2.png"},
       ],
       repeat: -1,
-      yoyo: true
+      yoyo: true,
+      frameRate: 10
     })
     this.player.play("run");
   }
