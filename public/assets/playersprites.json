@@ -1,0 +1,83 @@
+{
+	"textures": [
+		{
+			"image": "playersprites.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 59,
+				"h": 32
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "smballstar_smb3_Mario_Sheet-24.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 21,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 2,
+						"w": 18,
+						"h": 30
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 18,
+						"h": 30
+					}
+				},
+				{
+					"filename": "smballstar_smb3_Mario_Sheet-25.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 21,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 2,
+						"w": 17,
+						"h": 30
+					},
+					"frame": {
+						"x": 21,
+						"y": 1,
+						"w": 17,
+						"h": 30
+					}
+				},
+				{
+					"filename": "smballstar_smb3_Mario_Sheet-23.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 21,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 3,
+						"w": 18,
+						"h": 29
+					},
+					"frame": {
+						"x": 40,
+						"y": 1,
+						"w": 18,
+						"h": 29
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:3ec89c03173427093a8c0b1985567226:fb26fc4c297d0077744d4ff868ea567b:108cbc51a1deb78735d278b1151b8281$"
+	}
+}
