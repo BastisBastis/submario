@@ -1,5 +1,5 @@
 import Phaser from 'phaser';
-
+ 
 export default class Demo extends Phaser.Scene {
 
   map: Phaser.Tilemaps.Tilemap | undefined;
