@@ -47,9 +47,9 @@ export default class Demo extends Phaser.Scene {
     
     this.controller = new Controller(this, this.player);
 
-    this.input.keyboard.on("keydown", (event:any) => {
-      console.log(event);
-    }))
+    this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A).on('down', ()=> {
+      console.log("hupp");
+    })
     /*this.player = this.add.sprite(20,20,"player", "mariostop.png");
     
     this.player.play("run");
