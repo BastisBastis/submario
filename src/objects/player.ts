@@ -6,7 +6,7 @@ export default class Player {
 
     constructor(scene:Phaser.Scene, x:number, y:number) {
         this.sprite = scene.physics.add.sprite(x, y, "player", "");
-        this.sprite.origin=(0,5,0,5);
+        
         this.maxSpeedX = 100;
         scene.anims.create({
             key: "run",
@@ -31,7 +31,7 @@ export default class Player {
     move(dir:number):void {
         this.sprite.play("run");
         this.sprite.setVelocityX(dir*this.maxSpeedX);
-        this.sprite.scaleX = dir;
+        this.sprite.flipX = true;
     }
 
     stop():void {
