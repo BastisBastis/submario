@@ -15,12 +15,11 @@ export default class Player {
             ],
             repeat: -1,
             yoyo: true,
-            frameRate: 4
+            frameRate: 8
           })
     }
 
     move(dir:number):void {
         this.sprite.play("run");
-        console.log("Hupp");
     }
 }
