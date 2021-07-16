@@ -3,7 +3,7 @@ import Phaser from 'phaser';
 export default {
   type: Phaser.AUTO,
   parent: 'game',
-  backgroundColor: '#888888ff',
+  backgroundColor: '#8888ff',
   scale: {
     width: 800,
     height: 600,
