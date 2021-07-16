@@ -7,9 +7,7 @@ export default class controller {
     constructor (scene:Phaser.Scene, player:Player) {
         this.player = player;
         
-        /*scene.input.keyboard.on('keydown', (key:any) => {
-            console.log("key");
-        })
-        */
+        const leftArrow = scene.input.keyboard.addKey("LEFT");
+        console.log(left);
     }
 }
