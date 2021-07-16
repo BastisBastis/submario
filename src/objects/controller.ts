@@ -7,7 +7,7 @@ export default class controller {
     constructor (scene:Phaser.Scene, player:Player) {
         this.player = player;
         
-        scene.input.on('keydown', (key) => {
+        scene.input.on('keydown', (key:any) => {
             console.log("key");
         })
         
