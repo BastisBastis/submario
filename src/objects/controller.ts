@@ -7,11 +7,9 @@ export default class controller {
     constructor (scene:Phaser.Scene, player:Player) {
         this.player = player;
         
-        const cursors: Phaser.Types.Input.Keyboard.CursorKeys = scene.input.keyboard.createCursorKeys();
-        console.log(cursors);
-        if (cursors.left.isDown) {
-            player.move(-1);
-        }
+        scene.input.on('keydown', (key) => {
+            console.log(key);
+        })
         
     }
 }
