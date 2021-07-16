@@ -1,5 +1,6 @@
 import Phaser from 'phaser';
-import Player from "../objects/player.ts";
+import Player from "../objects/player";
+import Controller from "../objects/controller"
  
 export default class Demo extends Phaser.Scene {
  
@@ -44,7 +45,7 @@ export default class Demo extends Phaser.Scene {
 
     this.physics.add.collider(this.groundLayer, this.player.sprite);
     
-    this.player.move(1);
+    this.controller = new Controller(this.player);
     /*this.player = this.add.sprite(20,20,"player", "mariostop.png");
     
     this.player.play("run");
