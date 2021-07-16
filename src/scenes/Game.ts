@@ -2,20 +2,19 @@ import Phaser from 'phaser';
 
 export default class Demo extends Phaser.Scene {
 
-  map: number[];
+  map: Phaser.Tilemaps.Tilemap | undefined;
   player:string;
   cursors: number[];
-  groundLayer: number[];
+  groundLayer: Phaser.Tilemaps.TilemapLayer | undefined;
   coinLayer: number[];
   text: string;
 
 
   constructor() {
     super('GameScene');
-    this.map = [];
+    
     this.player= "";
     this.cursors = [];
-    this.groundLayer = [];
     this.coinLayer = [];
     this.text = "";
   }
@@ -25,19 +24,17 @@ export default class Demo extends Phaser.Scene {
     this.load.tilemapTiledJSON("map","assets/tilemaps/tilemaptest1.json");
     this.load.spritesheet("tiles", "assets/sbmstiles.png");
     this.load.atlas("player", "assets/smbsheet1.gif", "assets/spritemap/pcsnpcs.json");
-    
+
   }
 
   create() {
-    const logo = this.add.image(400, 70, 'logo');
+    this.map = this.make.tilemap({key: "map"});
+    const groundTiles:Phaser.Tilemaps.Tileset = this.map.addTilesetImage("tiles");
+    this.groundLayer = this.map.createLayer("World", groundTiles, 0, 0);
+    this.groundLayer.setCollisionByExclusion([-1]);
 
-    this.tweens.add({
-      targets: logo,
-      y: 350,
-      duration: 1500, 
-      ease: 'Sine.inOut',
-      yoyo: true,
-      repeat: -1
-    });
+    this.physics.world.bounds.width = this.groundLayer.width;
+    this.physics.world.bounds.height = this.groundLayer.height;
+
   }
 }
