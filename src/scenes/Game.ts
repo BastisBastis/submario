@@ -29,7 +29,7 @@ export default class Demo extends Phaser.Scene {
 
   create() {
     this.map = this.make.tilemap({key: "map"});
-    const groundTiles:Phaser.Tilemaps.Tileset = this.map.addTilesetImage("tiles");
+    const groundTiles:Phaser.Tilemaps.Tileset = this.map.addTilesetImage("map");
     this.groundLayer = this.map.createLayer("World", groundTiles, 0, 0);
     this.groundLayer.setCollisionByExclusion([-1]);
 
