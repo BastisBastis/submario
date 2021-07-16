@@ -22,7 +22,7 @@ export default class Player {
 
     move(dir:number):void {
         this.sprite.play("run");
-        this.sprite.setVelocityX(dir*50);
+        this.sprite.setVelocityX(dir*this.maxSpeedX);
     }
 
     stop():void {
