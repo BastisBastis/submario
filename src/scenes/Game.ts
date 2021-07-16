@@ -36,6 +36,6 @@ export default class Demo extends Phaser.Scene {
     this.physics.world.bounds.width = this.groundLayer.width;
     this.physics.world.bounds.height = this.groundLayer.height;
 
-    this.add.sprite(20,20,"mariostop");
+    this.add.sprite(20,20,"player", "mariostop.png");
   }
 }
