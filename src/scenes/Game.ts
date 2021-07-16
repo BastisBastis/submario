@@ -1,9 +1,10 @@
 import Phaser from 'phaser';
+import Player from "../objects/player.ts";
  
 export default class Demo extends Phaser.Scene {
  
   map: Phaser.Tilemaps.Tilemap | undefined;
-  player:Phaser.Physics.Arcade.Sprite | undefined;
+  player:Player | undefined;
   cursors: number[];
   groundLayer: Phaser.Tilemaps.TilemapLayer | undefined;
   coinLayer: number[];
@@ -37,23 +38,15 @@ export default class Demo extends Phaser.Scene {
     this.physics.world.bounds.width = this.groundLayer.width;
     this.physics.world.bounds.height = this.groundLayer.height;
 
-    this.player = this.physics.add.sprite(20,20, "player", "mariostop.png");
-    this.player.setCollideWorldBounds(true);
+    this.player=Player(this, 20, 20);
 
-    this.physics.add.collider(this.groundLayer, this.player);
+    this.player.sprite.setCollideWorldBounds(true);
 
+    this.physics.add.collider(this.groundLayer, this.player.sprite);
+    
+    this.player.move(1);
     /*this.player = this.add.sprite(20,20,"player", "mariostop.png");
-    this.anims.create({
-      key: "run",
-      frames: [
-        {key:"player", frame:"mariostop.png"},
-        {key:"player", frame:"run1.png"},
-        {key:"player", frame:"run2.png"},
-      ],
-      repeat: -1,
-      yoyo: true,
-      frameRate: 4
-    })
+    
     this.player.play("run");
     */
 
