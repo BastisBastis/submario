@@ -6,7 +6,7 @@ export default class Player {
 
     constructor(scene:Phaser.Scene, x:number, y:number) {
         this.sprite = scene.physics.add.sprite(x, y, "player", "");
-        this.maxSpeedX = 50;
+        this.maxSpeedX = 100;
         scene.anims.create({
             key: "run",
             frames: [
@@ -17,7 +17,13 @@ export default class Player {
             repeat: -1,
             yoyo: true,
             frameRate: 8
-          })
+          });
+        scene.anims.create({
+            key:"stop",
+            frames: [
+                {key:"player", frame:"mariostop.png"}
+            ]
+        });
     }
 
     move(dir:number):void {
@@ -27,5 +33,6 @@ export default class Player {
 
     stop():void {
         this.sprite.setVelocityX(0);
+        this.sprite.play("stop");
     }
 }
