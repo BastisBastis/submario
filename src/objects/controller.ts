@@ -8,7 +8,7 @@ export default class controller {
         this.player = player;
         
         scene.input.on('keydown', (key) => {
-            console.log(key);
+            console.log("key");
         })
         
     }
