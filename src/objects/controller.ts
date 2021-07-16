@@ -8,6 +8,8 @@ export default class controller {
         this.player = player;
         
         const leftArrow = scene.input.keyboard.addKey("LEFT");
-        console.log(leftArrow);
+        leftArrow.on("down", () {
+            player.move(-1);
+        })
     }
 }
