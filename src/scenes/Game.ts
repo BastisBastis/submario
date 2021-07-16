@@ -21,7 +21,7 @@ export default class Demo extends Phaser.Scene {
 
   preload() {
     //Load tilemap and tiles
-    this.load.tilemapTiledJSON("map","assets/tilemap1.json");
+    this.load.tilemapTiledJSON("map","assets/tilemap1.jsonasdf");
     this.load.spritesheet("tiles", "assets/smbstiles.png", {frameWidth:16, frameHeight:16});
     //this.load.atlas("player", "assets/smbsheet1.gif", "assets/spritemap/pcsnpcs.json");
 
