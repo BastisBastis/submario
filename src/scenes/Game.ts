@@ -38,7 +38,7 @@ export default class Demo extends Phaser.Scene {
     this.physics.world.bounds.width = this.groundLayer.width;
     this.physics.world.bounds.height = this.groundLayer.height;
 
-    this.player=Player(this, 20, 20);
+    this.player= new Player(this, 20, 20);
 
     this.player.sprite.setCollideWorldBounds(true);
 
