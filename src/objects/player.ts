@@ -10,12 +10,13 @@ export default class Player {
         scene.anims.create({
             key: "run",
             frames: [
-              {key:"player", frame:"mariostop.png"},
               {key:"player", frame:"run1.png"},
               {key:"player", frame:"run2.png"},
+              {key:"player", frame:"run1.png"},
+              {key:"player", frame:"mariostop.png"},
             ],
             repeat: -1,
-            yoyo: true,
+            yoyo: false,
             frameRate: 8
           });
         scene.anims.create({
