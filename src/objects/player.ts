@@ -30,6 +30,7 @@ export default class Player {
     move(dir:number):void {
         this.sprite.play("run");
         this.sprite.setVelocityX(dir*this.maxSpeedX);
+        this.sprite.scaleX = dir;
     }
 
     stop():void {
