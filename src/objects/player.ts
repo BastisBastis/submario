@@ -21,5 +21,6 @@ export default class Player {
 
     move(dir:number):void {
         this.sprite.play("run");
+        console.log("Hupp");
     }
 }
