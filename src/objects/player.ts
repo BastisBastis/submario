@@ -31,7 +31,7 @@ export default class Player {
     move(dir:number):void {
         this.sprite.play("run");
         this.sprite.setVelocityX(dir*this.maxSpeedX);
-        this.sprite.flipX = number===-1;
+        this.sprite.flipX = dir===-1;
     }
 
     stop():void {
