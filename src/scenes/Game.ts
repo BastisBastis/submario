@@ -28,7 +28,7 @@ export default class Demo extends Phaser.Scene {
   }
 
   create() {
-    this.cameras.main.setZoom(2);
+    this.cameras.main.setZoom(1.5);
     this.map = this.make.tilemap({key: "map"});
     const groundTiles:Phaser.Tilemaps.Tileset = this.map.addTilesetImage("submariotiles", "tiles"); 
     this.groundLayer = this.map.createLayer("World", groundTiles, 0, 0);
