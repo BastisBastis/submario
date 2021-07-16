@@ -39,6 +39,8 @@ export default class Demo extends Phaser.Scene {
     this.player = this.physics.add.sprite(20,20, "player", "mariostop.png");
     this.player.setCollideWorldBounds(true);
 
+    this.physics.add.collider(this.groundLayer, this.player);
+
     /*this.player = this.add.sprite(20,20,"player", "mariostop.png");
     this.anims.create({
       key: "run",
