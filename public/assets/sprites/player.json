@@ -1,7 +1,7 @@
 {
 	"textures": [
 		{
-			"image": "playersprites.png",
+			"image": "player.png",
 			"format": "RGBA8888",
 			"size": {
 				"w": 59,
@@ -10,7 +10,7 @@
 			"scale": 1,
 			"frames": [
 				{
-					"filename": "smballstar_smb3_Mario_Sheet-24.png",
+					"filename": "run1.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
@@ -31,7 +31,7 @@
 					}
 				},
 				{
-					"filename": "smballstar_smb3_Mario_Sheet-25.png",
+					"filename": "mariostop.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
@@ -52,7 +52,7 @@
 					}
 				},
 				{
-					"filename": "smballstar_smb3_Mario_Sheet-23.png",
+					"filename": "run2.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
@@ -78,6 +78,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:3ec89c03173427093a8c0b1985567226:fb26fc4c297d0077744d4ff868ea567b:108cbc51a1deb78735d278b1151b8281$"
+		"smartupdate": "$TexturePacker:SmartUpdate:c39bd3657bbe4a3648b94477357fdb71:988483b2e0b41377281bf8b9fc4d8c6e:86d5339b780aedd87b35e2b7c0a7e11b$"
 	}
 }

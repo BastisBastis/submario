@@ -23,7 +23,7 @@ export default class Demo extends Phaser.Scene {
     //Load tilemap and tiles
     this.load.tilemapTiledJSON("map","assets/tilemaps/testlevel.json");
     this.load.spritesheet("tiles", "assets/smbstiles.png", {frameWidth:16, frameHeight:16});
-    this.load.atlas("player", "assets/playersprites.png", "assets/playersprites.json");
+    this.load.multiatlas("player", "assets/sprites/player.json", "assets/sprites");
 
   }
 
